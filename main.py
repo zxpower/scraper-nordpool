@@ -36,7 +36,6 @@ def print_prices(today_data, tomorrow_data):
     pprint(today_data)
 
 
-# Press the green button in the gutter to run the script.
 if __name__ == '__main__':
     area = os.getenv('SCRAPE_AREA', 'LV')
     mongo_server = os.getenv('MONGO_SERVER', 'mongo')

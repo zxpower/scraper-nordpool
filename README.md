@@ -1,3 +1,5 @@
 # Nordpool Scraper
 
-Scraper in Python to get today's and tomorrow's Nordpool prices.
+Scraper written in Python to scrape today and tomorrow [Nordpool](https://www.nordpoolgroup.com) spot prices.
+
+(c)2022 Reinholds Zviedris

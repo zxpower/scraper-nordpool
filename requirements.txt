@@ -1,0 +1,2 @@
+git+https://github.com/kipe/nordpool.git
+pymongo==4.3.2

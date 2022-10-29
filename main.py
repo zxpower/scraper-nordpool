@@ -15,20 +15,20 @@ class DateTimeAwareEncoder(json.JSONEncoder):
         return json.JSONEncoder.default(self, o)
 
 
-def get_tomorrow(area, date):
+def get_tomorrow(area_in, end_date):
     # Initialize class for fetching Elspot prices
     prices_spot = elspot.Prices()
 
     # Fetch hourly Elspot prices for area and print the resulting dictionary
-    return prices_spot.hourly(areas=[area], end_date=date)
+    return prices_spot.hourly(areas=[area_in], end_date=end_date)
 
 
-def get_today(area, date):
+def get_today(area_in, end_date):
     # Initialize class for fetching Elsbas prices
     prices_bas = elbas.Prices()
 
     # Fetch hourly Elbas prices for area and print the resulting dictionary
-    return prices_bas.hourly(areas=[area], end_date=date)
+    return prices_bas.hourly(areas=[area_in], end_date=end_date)
 
 
 def print_prices(today_data, tomorrow_data):

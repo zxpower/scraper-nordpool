@@ -46,7 +46,7 @@ if __name__ == '__main__':
     mongo_client = MongoClient(f"mongodb://{mongo_server}:{mongo_port}/")
     mongo_db = mongo_client[mongo_database_name]
 
-    if now.hour > 14 and now.minute > 59:
+    if now.hour > 14 and now.minute > 30:
         today = date.today()
         tomorrow = today + timedelta(days=1)
     else:
